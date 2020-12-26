@@ -1,0 +1,82 @@
+{
+  "name": "mapaction-web-map-poc",
+  "private": true,
+  "description": "An application to prove the concept that MapAction can easily publish maps online.",
+  "version": "0.1.0",
+  "author": "MapAction",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "generate": "plop --plopfile tools/generators/plopfile.js",
+    "lint:formatting": "prettier --check '**/*.ts?(x)'",
+    "lint:css": "stylelint \"**/*.styled.ts\"",
+    "lint": "eslint \"src/**/*.ts?(x)\" --quiet",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@loadable/component": "5.14.1",
+    "@material-ui/core": "4.11.2",
+    "@material-ui/icons": "4.11.2",
+    "@material-ui/styles": "4.11.2",
+    "babel-plugin-styled-components": "1.12.0",
+    "gatsby": "2.26.1",
+    "gatsby-image": "2.5.0",
+    "gatsby-plugin-manifest": "2.6.1",
+    "gatsby-plugin-material-ui": "2.1.10",
+    "gatsby-plugin-offline": "3.4.0",
+    "gatsby-plugin-react-helmet": "3.4.0",
+    "gatsby-plugin-react-leaflet": "2.0.13",
+    "gatsby-plugin-react-svg": "3.0.0",
+    "gatsby-plugin-sass": "2.8.0",
+    "gatsby-plugin-sharp": "2.8.0",
+    "gatsby-plugin-styled-components": "3.7.0",
+    "gatsby-source-filesystem": "2.5.0",
+    "gatsby-transformer-sharp": "2.6.0",
+    "leaflet": "1.7.1",
+    "node-sass": "4.14.1",
+    "prop-types": "15.7.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-helmet": "6.1.0",
+    "react-leaflet": "3.0.5",
+    "styled-components": "5.2.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "1.5.19",
+    "@types/react-helmet": "6.1.0",
+    "@types/styled-components": "5.1.7",
+    "@typescript-eslint/eslint-plugin": "4.11.0",
+    "@typescript-eslint/parser": "4.11.0",
+    "eslint": "7.16.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-unicorn": "24.0.0",
+    "husky": "5.0.6",
+    "lint-staged": "10.5.3",
+    "plop": "2.7.4",
+    "prettier": "2.2.1",
+    "stylelint": "13.8.0",
+    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-recommended": "3.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.10.0",
+    "typescript": "4.1.3"
+  },
+  "lint-staged": {
+    "*.ts?(x)": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapaction/mapaction-web-map-poc"
+  },
+  "bugs": {
+    "url": "https://github.com/mapaction/mapaction-web-map-poc"
+  }
+}
