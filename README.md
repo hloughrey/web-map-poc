@@ -86,6 +86,6 @@ A quick look at the top-level files and directories you'll see in the project.
 
 ## 💫 Deploy
 
-As this is a POC the repo is current in my own github profile, but if you would like access thats not a problem. By hosting the repo under my own GitHub profile I was then able to set build & deployments to happen upon pushes to master. The builds & deploys are held on [Render](https://render.com/) under my own profile, but I can grant access to anyone who wants it.
+As this is a POC the repo is current in my own github profile, but if you would like access thats not a problem. By hosting the repo under my own GitHub profile I was then able to set build & deployments to happen upon pushes to master. The builds & deploys are held on [Netlify](https://www.netlify.com/) under my own profile, but I can grant access to anyone who wants it.
 
-If a merge to master & the build on Render are successful then the site will be deployed to [mapaction-web-mapping-poc.onrender.com](https://mapaction-web-mapping-poc.onrender.com). This is a temporary solution until we can agree, if this is the sort of app MapAction are interested in & if so, where to host it.
+If a merge to master & the build on Render are successful then the site will be deployed to [mapaction-web-mapping-poc](https://mapaction-web-map-poc.netlify.app/). This is a temporary solution until we can agree, if this is the sort of app MapAction are interested in & if so, where to host it.
