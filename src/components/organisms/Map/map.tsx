@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core';
 import React, { ReactElement } from 'react';
 import { Marker, Popup, TileLayer } from 'react-leaflet';
 
@@ -8,7 +9,7 @@ export function Map(): ReactElement {
         return (
             <div>
                 <StyledMapContainer
-                    center={[51.505, -0.09]}
+                    center={[51.69972661906321, -0.9071014739207922]}
                     zoom={13}
                     scrollWheelZoom={false}
                 >
@@ -16,9 +17,24 @@ export function Map(): ReactElement {
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <Marker position={[51.505, -0.09]}>
+                    <Marker position={[51.69972661906321, -0.9071014739207922]}>
                         <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
+                            <Typography
+                                variant="h6"
+                                component="h1"
+                                gutterBottom
+                            >
+                                MapAction
+                            </Typography>
+                            <Typography variant="body2">
+                                Douglas Court <br />
+                                1-2 Seymour Business Park
+                                <br />
+                                Chinnor <br />
+                                Oxfordshire <br />
+                                United Kingdom <br />
+                                OX39 4HA
+                            </Typography>
                         </Popup>
                     </Marker>
                 </StyledMapContainer>

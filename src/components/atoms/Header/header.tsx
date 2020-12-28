@@ -1,22 +1,25 @@
 import React, { ReactElement } from 'react';
-import { Toolbar, IconButton } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { Toolbar } from '@material-ui/core';
+// import MenuIcon from '@material-ui/icons/Menu';
 
 import { PageContainer } from '../../../components';
-import { StyledAppBar, StyledLink } from './header.styled';
+import { StyledAppBar, StyledLink, StyledNavLink } from './header.styled';
 import Logo from '../../../images/WhiteLogo.svg';
 
 export function Header(): ReactElement {
     return (
         <StyledAppBar position="static">
-            <PageContainer>
-                <Toolbar>
+            <PageContainer disableMargin>
+                <Toolbar disableGutters>
                     <StyledLink href="https://mapaction.org/">
                         <Logo width="150" height="54" />
                     </StyledLink>
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <nav>
+                        <StyledNavLink to="/">Examples</StyledNavLink>
+                    </nav>
+                    {/* <IconButton edge="start" color="inherit" aria-label="menu">
                         <MenuIcon />
-                    </IconButton>
+                    </IconButton> */}
                 </Toolbar>
             </PageContainer>
         </StyledAppBar>
