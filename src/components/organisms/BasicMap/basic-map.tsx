@@ -2,9 +2,9 @@ import { Typography } from '@material-ui/core';
 import React, { ReactElement } from 'react';
 import { Marker, Popup, TileLayer } from 'react-leaflet';
 
-import { StyledMapContainer } from './map.styled';
+import { StyledMapContainer } from './basic-map.styled';
 
-export function Map(): ReactElement {
+export function BasicMap(): ReactElement {
     if (typeof window !== 'undefined') {
         return (
             <div>

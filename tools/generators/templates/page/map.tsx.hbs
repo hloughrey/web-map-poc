@@ -1,27 +1,25 @@
 import React, { ReactElement } from 'react';
 import { Typography } from '@material-ui/core';
 
-import { Layout, Seo, BasicMap } from '../components';
+import { Layout, Seo, {{pascalCase name}}Map } from '../components';
 import {
     StyledPageContainer,
     StyledMapContainer,
-} from '../pages-lib/basic-map/basic-map.styled';
+} from '../pages-lib/{{kebabCase name}}-map/{{kebabCase name}}-map.styled';
 
-export default function BasicMapPage(): ReactElement {
+export default function {{pascalCase name}}Page(): ReactElement {
     return (
         <Layout>
             <StyledPageContainer>
-                <Seo title="Basic Map" />
+                <Seo title="{{pascalCase name}}" />
                 <Typography variant="h3" component="h2">
-                    Basic map
+                    {{pascalCase name}} Map
                 </Typography>
                 <StyledMapContainer>
-                    <BasicMap />
+                    <{{pascalCase name}}Map />
                 </StyledMapContainer>
                 <Typography variant="body1" gutterBottom>
-                    This is just a basic map showing that we can create simple
-                    stand alone maps which can highlight the location of a
-                    service with some supplimentary data within a popup.
+                    This is just a {{pascalCase name}} map.
                 </Typography>
             </StyledPageContainer>
         </Layout>

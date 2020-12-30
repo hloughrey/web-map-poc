@@ -61,6 +61,7 @@ A quick look at the top-level files and directories you'll see in the project.
     ├── .stylelintrc
     ├── package.json
     └── README.md
+    └── tools
 
 1.  **`/.husky`**: This directory contains the git hooks which will help ensure that code leaving a developers machine meets our baseline quality gate.
 
@@ -78,11 +79,22 @@ A quick look at the top-level files and directories you'll see in the project.
 
 1.  **`README.md`**: A text file containing useful reference information about your project.
 
+1.  **`tools`**: Contains templates & scripts for generating new map pages & components
+
 ## 🎓 Learning Gatsby
 
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 -   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 🧰 Generating new Map Pages & Components
+
+This repo contains templates for created the following:
+
+-   New Components
+-   New map page & component
+
+To create these run `yarn generate` & follow the prompt from the terminal.
 
 ## 💫 Deploy
 

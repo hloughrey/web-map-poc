@@ -1,3 +1,3 @@
-export * from './Map';
+export * from './BasicMap';
 export * from './Layout';
 export * from './ExampleCard';
