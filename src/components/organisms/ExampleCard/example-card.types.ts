@@ -3,4 +3,5 @@ export type TExampleCardProperties = {
     imageName: string;
     description: string;
     image?: unknown;
+    link: string;
 };

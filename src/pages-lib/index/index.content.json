@@ -3,7 +3,14 @@
         {
             "title": "Basic Map",
             "image": "BasicMap",
-            "description": "This is just a basic map showing that we can create simple stand alone maps which can highlight the location of a service with some supplimentary data within a popup."
+            "description": "This is just a basic map showing that we can create simple stand alone maps which can highlight the location of a service with some supplimentary data within a popup.",
+            "link": "basic-map"
+        },
+        {
+            "title": "Shake Map",
+            "image": "ShakeMap",
+            "description": "Example showing the epicentre of the Nepal earthquake & the subsequent shake map. The shake map data is being pulled in from a local GeoJSON data source.",
+            "link": "shake-map"
         }
     ]
 }

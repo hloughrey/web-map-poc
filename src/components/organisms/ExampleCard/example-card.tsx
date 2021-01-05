@@ -10,6 +10,7 @@ export function ExampleCard({
     title,
     image,
     description,
+    link,
 }: TExampleCardProperties): ReactElement {
     return (
         <StyledCard>
@@ -25,7 +26,7 @@ export function ExampleCard({
                         <Typography variant="subtitle1" color="textSecondary">
                             {description}
                         </Typography>
-                        <Link to="/basic-map">See more</Link>
+                        <Link to={`/${link}`}>See more</Link>
                     </StyledCardContent>
                 </Grid>
             </Grid>
