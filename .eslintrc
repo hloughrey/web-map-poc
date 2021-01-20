@@ -20,6 +20,7 @@
             {
                 "varsIgnorePattern": "react|_"
             }
-        ]
+        ],
+        "unicorn/no-reduce": "off"
     }
 }
